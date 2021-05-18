@@ -170,12 +170,15 @@ def main():
             Y = np.array(dataset['PE'])[:3000]
             X = dataset.drop(columns=['PE'])[:3000]
 
-        #Make scaling
-        scaler = MinMaxScaler()
-        scaler.fit(X)
-        X = scaler.transform(X)
 
         X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+
+        #Make scaling
+        scaler = MinMaxScaler()
+        scaler.fit(X_train)
+        X_train = scaler.transform(X_train)
+
+        X_test = scaler.transform(X_test)
 
         n = len(X_train)
 
