@@ -16,6 +16,8 @@ In order to reproduce all experiments from the paper
      '0'
      Type 0 if smooth function, 1 if sinus function:
      '0'
+     Type the value of noise (std):
+     '0.15'
      Type the number of repetitions to perform:
      '1000'
 
@@ -26,7 +28,7 @@ In order to reproduce all experiments from the paper
      Type 0 if smooth function, 1 if sinus function:
      '1'
      Type the value of noise (std):
-     '0.1'
+     '0.15'
      Type the number of repetitions to perform:
      '1000'
 
